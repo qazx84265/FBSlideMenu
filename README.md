@@ -11,6 +11,7 @@ step 2:
   Init some viewcontrollers and add them to the FBSlideMenuVC.
   Here wo do this in the 'AppDelegate.swift'
   At first:declare the slideMenuVC
+    
     var slideMenu:FBSlideMenuVC!
     
   then declare some viewControllers include the left menu and right menu controllers
@@ -52,7 +53,9 @@ step 2:
         tabbarController.navigationItem.rightBarButtonItem = barBtnr
         
   finally,create the slideMenu and make it as the rootController of the app.
+        
         //-------------slide
+        
         slideMenu = FBSlideMenuVC(leftVC: leftMenuVC, mainVC: nav,rightVC: rightMenuVC)
         
         self.window!.rootViewController = slideMenu
